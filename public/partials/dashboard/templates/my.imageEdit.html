@@ -1,0 +1,17 @@
+<form role="form" ng-submit="editImage()">
+	<img ng-src="{{image.url}}" />
+	<div class="form-group">
+		<label for="image_title">Image Title:</label>
+		<input type="text" class="form-control" id="image_title" ng-model="image.image_title">
+	</div>
+	<div class="form-group">
+		<label for="image_descirption">Image Description:</label>
+		<input type="text" class="form-control" id="image_descirption" ng-model="image.image_description">
+	</div>
+	<div class="form-group">
+		<label for="shared_users">Shared Users:</label>
+		<textarea class="form-control" id="shared_users" ng-model="image.shared_users"></textarea>
+	</div>
+	<a ui-sref="my.image({imageId:image.ID})" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</a>
+	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Submit</button>
+</form>

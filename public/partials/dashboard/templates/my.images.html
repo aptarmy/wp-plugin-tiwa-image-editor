@@ -1,0 +1,9 @@
+<div class="media" ng-repeat="image in images">
+	<a class="pull-left" ui-sref="my.image({'imageId':image.ID})" style="border: none;">
+		<img class="media-object" ng-src="{{image.thumbnail_200_url}}" ng-attr-alt="{{image.image_description}}">
+	</a>
+	<div class="media-body">
+		<a ui-sref="my.image({'imageId':image.ID})"><h4 class="media-heading" style="margin:0;">{{image.image_title}}</h4></a>
+		{{image.image_description}}
+	</div>
+</div>

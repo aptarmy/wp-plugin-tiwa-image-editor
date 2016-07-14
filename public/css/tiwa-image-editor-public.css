@@ -1,0 +1,39 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#tiwa-imageeditor-upload-input {
+	background-color: #f1f1f1;
+    padding: 3em 5em;
+    border: 0.2em dashed #948d8d;
+    border-radius: 1em;
+}
+#tiwa-imageeditor-display-upload {
+	display: none;
+}
+.tiwa-image-editor {
+    cursor: pointer;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+	margin-right: 5px;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+/* Aviary */
+
+/* Hide Aviary Logo */
+#avpw_powered_branding {
+    display: none !important;
+}

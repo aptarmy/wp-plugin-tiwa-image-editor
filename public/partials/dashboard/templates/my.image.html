@@ -1,0 +1,9 @@
+<img ng-src="{{image.url}}">
+<h3>{{image.image_title}}</h3>
+<blockquote>
+  <p>{{image.image_description}}</p>
+</blockquote>
+
+<a ui-sref="my.images" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Back</a>
+<a ui-sref="my.imageEdit({imageId:image.ID})" class="btn btn-primary"><span class="glyphicon glyphicon-cog"></span> Edit</a>
+<button class="btn btn-danger" ng-click="deleteImage(image.ID)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
